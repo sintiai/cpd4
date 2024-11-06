@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #004aad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Navigation Styles */
+nav {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox for the navigation */
+    flex-wrap: wrap; /* Allow items to wrap if there's not enough space */
+    justify-content: center; /* Center items */
+}
+
+nav ul li {
+    margin: 10px; /* Ensure there's spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #004aad;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border: 1px solid #004aad;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004aad;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Query for Tablets (700px and above) */
+@media (min-width: 700px) {
+
+    /* Adjust navigation for tablets */
+    nav ul {
+        flex-direction: row; 
+        padding: 20px 30px; 
+    }
+
+    nav ul li {
+        margin-right: 15px; 
+    }
+
+    /* Adjust font size of links */
+    nav ul li a {
+        font-size: 1.2rem; 
+        padding: 8px 15px; 
+    }
+
+    /* Footer styles for tablets */
+    footer {
+        padding: 12px; 
+    }
+
+    footer p {
+        font-size: 1.2rem; 
+    }
+}
+
+/* Media Query for Desktops (1024px and above) */
+@media (min-width: 1024px) {
+
+    /* Adjust navigation for desktops */
+    nav ul {
+        padding: 20px 50px; 
+    }
+
+    nav ul li {
+        margin-right: 20px; 
+    }
+
+    /* Adjust font size of links for desktops */
+    nav ul li a {
+        font-size: 1.5rem; 
+        padding: 12px 20px; 
+    }
+
+    /* Footer styles for desktops */
+    footer {
+        padding: 15px; 
+    }
+
+    footer p {
+        font-size: 1.4rem; 
+    }
+}
