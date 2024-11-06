@@ -1,4 +1,5 @@
 
+// Placeholder image
 document.querySelectorAll('img').forEach(img =>{
     console.log("runs")
     img.onerror = function() {
