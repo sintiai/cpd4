@@ -9,7 +9,6 @@ document.querySelectorAll('img').forEach(img =>{
     }
 })
 
-
 // Go to top button
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
